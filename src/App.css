@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(103, 4, 103);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navBar {
+  background-color: rgb(103, 4, 103);
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#navBar ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navBar ul li {
+  margin-right: 13px;
+}
+#navBar ul li a {
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+}
+
+#navBar ul li a:hover {
+  color: rgb(247, 68, 200);
+  filter: drop-shadow(0.1em 0.1em 0.1em black);
+}
+
+#logIn {
+  color: rgb(217, 30, 167);
   display: flex;
   flex-direction: column;
+  max-width: 40%;
+  margin: 0 auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 8em;
+  border: 1px;
+  border-radius: 25px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: rgb(103, 4, 103);
+  filter: drop-shadow(0em 0.75em 20px black);
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  /*filter: drop-shadow(0.1em 0.1em 0.1em black);*/
+  margin-bottom: 35px;
+  margin-top: 40px;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#idInput {
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding-left: 25;
+  background-color: rgb(211, 211, 211);
+}
+
+#pwInput {
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: rgb(211, 211, 211);
+}
+#submitbutt {
+  /*filter: drop-shadow(0.3em 0.2em 0.2em black);*/
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 9px;
+  background-color: rgb(211, 211, 211);
+  color: rgb(126, 126, 126);
+}
+#submitbutt:hover {
+  color: rgb(176, 176, 176);
+  background-color: rgb(217, 30, 167);
 }
